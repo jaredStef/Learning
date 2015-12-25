@@ -31,11 +31,6 @@ int minCoinsForDollar(float amount)
     // coin amounts
     int amounts[] = {25, 10, 5, 1};
 
-    printf("%d\n", wholeDollars);
-    printf("%f\n", centsInAmount);
-    printf("%d\n", cents);
-    printf("%d\n", coinsTaken);
-
     // goes through all the amounts and if it can remove it adds 1 to coins used
     while (cents != 0)
     {
