@@ -1,0 +1,21 @@
+Buffer Overflow Exploit
+
+Overflow input buffer so memory runs into and overrides the return address (points to where to go next) so that the return address is the start malicious code entered
+
+linked list
+
+contains element and pointer to next element
+Good because the elements can be anywhere
+
+O(n)
+Linear searching
+
+We can no longer use binary search etc
+We are giving up random access
+
+Omega (1)
+// could be first element
+
+delete - O(n), Omega(1)
+
+giving up search speed, but gaining flexablility 
