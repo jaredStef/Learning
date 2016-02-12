@@ -15,4 +15,4 @@ while True:
 	elif remaining < 0:
 		print "Min to nearest 10 is " + str(ans)
 		break
-		ans += incrementSize
+	ans += incrementSize
