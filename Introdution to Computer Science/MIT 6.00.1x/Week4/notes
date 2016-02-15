@@ -1,0 +1,43 @@
+Testing & Debugging
+--------------------
+Partition up test inputs for input space
+
+- black box testing - based on paths through specs
+- glass box testing - based on paths through code
+
+Black Box Testing - designed without knowledge of implementation
+- removes bias of implementer
+
+Glass Box Testing - use code to design test cases
+- path complete if every path through code is tested once
+
+Testing Loop
+------------
+unit testing - checks algorithm
+integration testing - integration bugs
+- repeat -
+
+Test drivers - test code for us
+sets environment
+runs code on inputs
+reports results
+stubs simulate parts used by unit testing not yet written
+
+regression testing - test that works after changes
+
+overt - code crashes, runs forever
+cover - no obvious error
+
+persistent - occurs every time code is run
+intermittent - only occurs sometimes
+
+Categories of bugs
+obvious and detect
+- *defensive programming* - try to make sure if bug is found it falls here
+overt and intermittent
+- harder, but if conditions can be reproduced it can be fixed
+covert
+- hard, returns a value, but a wrong value
+
+Pre-Condition - make sure data is correct before code runs
+Post-Condition - make sure code worked and didn't get a incorrect result
