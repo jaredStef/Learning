@@ -1,0 +1,21 @@
+Interactive Algorithms
+-Loop doing a step over and over until returning
+
+Recursive algorithms
+-call self again with a reduced argument
+  base case - statement returning so it doesn't keep recurring
+
+Stacks frames when called recursively (why values aren't same)
+stacks then unwind when base case returns
+
+Mathematical Induction
+- prove true for smallest value - n
+- prove true for n+1
+- true for all values
+
+0+1+2+3...n = (n(n+1))/2
+
+Divide and conquer
+- solve a hard problem by breaking it into a set of sub-problems
+  - that are easier
+  - thats solutions combine to solve original
