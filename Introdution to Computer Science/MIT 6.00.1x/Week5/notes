@@ -1,0 +1,105 @@
+---------------------
+      Lecture 9
+---------------------
+
+Random Access Machine Model
+--------------------------
+- Steps are done sequentially
+- Assignment, comparison, arithmetic, and accessing memory all take constant time
+
+Cases for measuring complexity
+- best case, minimum running time over all possible inputs
+- worst case, maximum running time over all possible inputs
+- average case (or expected case), average running time over all possible inputs
+
+We will focus on worse case - "upper bound" running time
+
+Asymptotic Notation
+- Growth of running time is important
+ 1 describe running time in terms of number of steps
+ 2 if sum of multiple terms keep one with largest growth rate
+ 3 if remaining term is a product drop multiplicative constants
+ - Uses Big O
+
+Big O
+-------
+O(1) - *Constant* Running Time                        |
+O(log n) - *Logarithmic* Running Time                 |
+O(n) - *Linear* Running Time                          |
+O(n log n) - *log-linear* running time                |
+O(n^c) - *Polynomial* Running Time (c = constant)     |
+O(c^n) - *Exponential* running time (c = constant)    ⬇︎ slower
+
+O(n^2) - quadratic
+https://en.wikipedia.org/wiki/Time_complexity - table is helpful
+
+---------------------
+      Lecture 10
+---------------------
+
+- always interested in worst case running time
+
+Linear O(n)
+- go through each element and check
+
+Indirection
+--------------
+- Access something by first accessing a reference
+- Compute pointer address to find it in constant time O(1)
+- Lists are lists of pointers to objects rather than objects themselves
+
+if list is ordered you can do better than O(n)
+
+Binary Search O(log n)
+--------------
+1. pick an index dividing list in half
+2. check if L[i] == e
+3. if not check if larger or smaller
+4. search left or right half of L
+
+- divide and conquer
+
+-- Does recursion run infinitely?
+- need to have a non-neg value being used (length of list)
+- need to make it decrementing and terminate when value is <= 0
+- on each recursive call decrement value so less than initially
+- What is the complexity? O(log n)
+- number of times the length can be divided by 2 (found by doing log2(midpoint) )
+
+Amortizing Costs
+--------------
+ - Is sort + search < linear search
+ - probably not, but if you factor in # of times searching, probably
+ - sort + searchComplexity*k + O(n)*k
+
+Selection Sort O(n^2)
+--------------
+- find smallest element swap to first index
+- do same thing for subset of list without first element until none are left
+
+Amortized Cost
+-----------------
+- Spread out cost over a period of time
+
+Merge Sort O(n)
+-----------------
+- divide and conquer
+1. if length is 0 or 1 it is already sorted
+2. split into two lists and sort
+3. merge lists
+    - look at first element of each and move smaller to end
+    - when list is empty copy rest to the other list
+
+Hashing
+--------------
+- we can do something efficient size independent
+- hash function turns data into a key
+- use key to access index in constant time
+- hash function - maps large space of inputs to smaller space of outputs
+- many to one mapping
+- collisions - two things mapped to same key
+- save items in smaller sublist
+- no collisions O(1)
+- if everything hashed to same O(n)
+- use large memory w/ almost uniform distribution for O(n)
+- Amortizes the cost! 
