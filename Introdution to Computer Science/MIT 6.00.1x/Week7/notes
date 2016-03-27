@@ -1,0 +1,26 @@
+
+Tree
+------
+- consists of one or more nodes
+- connected by branches
+- starts with a root node
+- except for leaves, each node has 1+ children
+    - parent node is the upper node of a "child" node
+- In simple trees, no child has more than one parent (called a graph)
+- binary tree, either has 0, 1, or 2 child nodes
+
+binary tree
+-----------
+- useful for searching and storing ordered data
+
+depth first search
+-------------------
+- start at root
+- if haven't found objective take left branch
+- if at leaf backtrack to where we took left branch and take right one
+
+breadth first search
+--------------------
+- start at root node
+- proceed to each child at next level in order
+- continue until reach objective
