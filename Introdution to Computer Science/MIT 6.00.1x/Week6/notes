@@ -1,0 +1,7 @@
+substitution printable - important behaviors of the superclass should be supported by all subclasses
+
+generators - method contains a yield statement
+-------------
+- have next() method which starts/resumes execution of a method
+- yield statement suspends execution and returns a value
+- StopIteration exception thrown when done
