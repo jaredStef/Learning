@@ -25,23 +25,24 @@ def compChooseWord(hand, wordList, n):
     """
     # BEGIN PSEUDOCODE <-- Remove this comment when you code this function; do your coding within the pseudocode (leaving those comments in-place!)
     # Create a new variable to store the maximum score seen so far (initially 0)
-
+    maxSoFar = 0
     # Create a new variable to store the best word seen so far (initially None)  
-
+    bestWordSoFar = ''
     # For each word in the wordList
-
+    for word in wordList:
         # If you can construct the word from your hand
+        if isValidWord(word, hand, wordList):
         # (hint: you can use isValidWord, or - since you don't really need to test if the word is in the wordList - you can make a similar function that omits that test)
 
             # Find out how much making that word is worth
-
+            worth = getWordScore(word, HAND_SIZE)
             # If the score for that word is higher than your best score
-
+            if worth > maxSoFar:
                 # Update your best score, and best word accordingly
-
-
+                bestWordSoFar = word
+                maxSoFar = worth
     # return the best word you found.
-
+    return bestWordSoFar
 
 #
 # Problem #7: Computer plays a hand
@@ -65,8 +66,26 @@ def compPlayHand(hand, wordList, n):
     wordList: list (string)
     n: integer (HAND_SIZE; i.e., hand size required for additional points)
     """
-    # TO DO ... <-- Remove this comment when you code this function
-    
+    #1
+    handCopy = hand.copy()
+    overallScore = 0
+    while True:
+        #2
+        print handCopy
+        while True:
+            chosenWord = compChooseWord(handCopy, wordList, HAND_SIZE)
+            if chosenWord is '':
+                print 'No word found'
+                print 'Total score was', overallScore
+                break
+            #3
+            print 'chose ' + chosenWord
+            overallScore += getWordScore(chosenWord, HAND_SIZE)
+            print 'Got', getWordScore(chosenWord, HAND_SIZE), 'points'
+            handCopy = updateHand(handCopy, chosenWord)
+            print handCopy
+            chosenWord = ''
+        break
 #
 # Problem #8: Playing a game
 #
@@ -95,8 +114,50 @@ def playGame(wordList):
 
     wordList: list (string)
     """
-    # TO DO... <-- Remove this comment when you code this function
-    print "playGame not yet implemented." # <-- Remove this when you code this function
+    hand = {}
+    while True:
+        userInput = raw_input('Choose n, r, or e: ')
+        if userInput == 'n':
+             counter = HAND_SIZE
+             hand = {}
+             # GENERATE HAND
+             while counter > 0:
+                 # generate number add to dict
+                char = random.choice(string.ascii_lowercase)
+                #add to dict
+                if hand.get(char, -800) == -800:
+                    hand[char] = 1
+                else:
+                    hand[char] += 1
+                counter -= 1
+             while True:
+                 newInput = raw_input('Enter a u or a c: ').strip()
+                 if newInput == 'c':
+                     compPlayHand(hand, wordList, HAND_SIZE)
+                     break
+                 elif newInput == 'u':
+                     playHand(hand, wordList, HAND_SIZE)
+                     break
+                 else:
+                     print 'not valid. Come on man'
+        elif userInput == 'r':
+            if hand == {}:
+                print 'there is no previous hand'
+            else:
+                while True:
+                    newInput = raw_input('Enter a u or a c: ').strip()
+                    if newInput == 'c':
+                        compPlayHand(hand, wordList, HAND_SIZE)
+                        break
+                    elif newInput == 'u':
+                        playHand(hand, wordList, HAND_SIZE)
+                        break
+                    else:
+                        print 'not valid. Come on man'
+        elif userInput =='e':
+            break
+        else:
+            print 'How hard is it to do that?!'
 
         
 #

@@ -24,3 +24,18 @@ breadth first search
 - start at root node
 - proceed to each child at next level in order
 - continue until reach objective
+
+Decision Tree
+--------------
+- At each node a decision is made
+- positive - left branch
+- negative - right branch
+- when we reach a node that satisfies the goal, the path back is the solution to the problem
+
+Knapsack problem - maximize value of items put into a knapsack of a finite size
+
+levels produce a - power set - all subsets of a set
+
+Efficiency
+---------
+- could generate and check nodes on the fly instead of generating a tree and then searching it
