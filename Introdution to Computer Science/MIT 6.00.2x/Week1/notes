@@ -1,0 +1,69 @@
+
+Lecture 1
+-----------
+
+Python Libraries
+
+NumPy - adds vectors, matrices, and many high-level mathematical functions
+
+Scipy - adds mathematical classes and functions useful to scientists
+
+MatPlotLib - adds an object-oriented API for plotting
+
+PyLab - combines the other libraries to provide a MATLAB-like interface
+
+Set Pylab figure
+pylab.figure(1)
+
+plot the data
+pylab.plot([y values], [x values], string of visual info (color then line type ex red circles 'ro'))
+linewith = x in points
+default x values  = range(len(y values))
+
+ex pylab.plot([1, 2, 3, 4]) will plot at (1, 0), (2, 1) etc
+
+pylab.savefig(fileNameString) saves the current plot to a file
+
+pylab.title(string, fontsize=12) sets title
+pylab.xlabel(string) sets x axis label
+pylab.ylabel(string) sets y axis label
+
+.rc file can change defaults
+
+pylab.legend
+
+Lecture 2
+-----------
+
+Simulation - tries to build a model
+They tell us how something works under conditions
+
+classified as
+
+deterministic vs stochastic
+static vs dynamic
+discrete vs continuous
+
+deterministic - rerunning won't change result
+stochastic - include randomness, can have different results
+
+discrete - enumerable (ex integers) 1, 2, 3
+continuous - not enumerable (ex real numbers) 0.000000000-end of mem
+
+static - doesn't account for time
+dynamic - accounts for time
+
+stochastic discrete in this course mostly
+
+experimental device is attempted to be built and incrementally improved to be more accurate
+They are approximations and it is just a prediction. Some are accurate and some aren't
+
+"All models are wrong, but some are useful" - George Box
+
+Brownian Motion - Random Walk
+
+Abstract Class - intended to be subclassed
+random.seed(x)
+seeds the random number generator with x
+
+How can we mathematically show the relation between the distance and number of steps since all seem to be a little less than the sqrt when graphed? Discussed when going through this course. 
