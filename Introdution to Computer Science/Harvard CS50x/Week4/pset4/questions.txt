@@ -1,0 +1,19 @@
+0.  BMP - Multiple (1, 4, 8, 16, 24, and 32 bit), GIF - 8 bit (256) , JPEG - 24 Bit
+1.  GIF
+2.  Lossy compression loses data quality when it is compressed, but lossless does not.
+3.  JPEG uses lossy compression.
+4.  The filename is motified to indicate that the file has been deleted and then the file's clusters are moved to the linked list of free space clusters.
+5.  You can overrite all the data on the hard drive with NULL characters (\0).
+6.  It is a header file that allows integer types of various fixed memory sizes to be used independent of the underlying device implementation.
+7.  You can guarantee the size of what is being stored regardless of the underlying implementation.
+8.  BTYE = 1 Byte, DWORD = 4, LONG = 4, WORD = 2
+9.  The values 0x42 0x4D or BM in ASCII denote the start of a bitmap file.
+10. biSize is the number of bytes in the BITMAPINFOHEADER struct, and bfSize is the size in bytes of the total bitmap file.
+11. It means that the bitmap is a top down DIB with it's origin being in the top right corner opposted to the top left.
+12. biBitCount
+13. That file on the disk may be in use by another application or it may not have permission to read it
+14. 1 is the third argument because we only want to read one item at a time.
+15. The padding would be 1.
+16. the fseek funtion sets the file position indicator based on the arguments passed to it.
+17. SEEK_CUR is a flag passed to the fseek function telling it to offset relative to the current (CUR) position indicator.
+18. After removing the red from the purely red pixels, inverting the black pixels, and darkening some of the light blue pixels it appears to be a smiling young man in a suit jacket and collared shirt.

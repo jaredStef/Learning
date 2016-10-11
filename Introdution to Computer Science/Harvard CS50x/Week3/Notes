@@ -1,70 +1,30 @@
-Bubble Sort
-Go two at a time and then switch
-ex
+Omega - lower amount of time an algo takes to complete
 
-8 3 1 6 7 4 5 2
+Bitwise Operators
 
-8 smaller than 3 swap
+AND
+0 & 0 = 0
+0 & 1 = 0
+1 & 0 = 0
+1 & 1 = 1
 
-3 8 1 6 7 4 5 2
+OR
+0 | 0 = 0
+0 | 1 = 1
+1 | 1 = 1
 
-1 smaller than 8 swap
+XOR (exclusive or) (1 of inputs are exclusive (different))
+0 ^ 0 = 0
+0 ^ 1 = 1
+1 ^ 1 = 0
 
-etc
+~ Flips a bit
+~0 = 1
+~1 = 0
 
-Selection Sort
-passes though remembers smallest and moves to i index
-ex
+Shifts bytes 
+<<
+010 << 1 = 100
 
-8 3 1 6 7 4 5 2
-
-1 smallest swap
-
-1 2 8 6 7 4 5 3
-
-2 smallest swap
-
-etc
-
-Insertion sort
-Divides list into sorted and unsorted part
-finds spot for item then shifts existing to leave space and inserts it there
-
---------------------- Lecture 2
-Bubble Sort - O(n^2)
-
-Big O - Asymptotic notation used to compare algorithms
-
-O(1) - constant number of steps. Independent of data size
-O(n) - increases linearly with size of data
-O(log(n)) - slowly increases
-
-Lower Bounds
-Omega(n)
-only realize it's not sorted by going through and looking
-
-Theta (feta) - big o (higher end) and omega (lower end) are same
-
-Selection sort - O(n^2) Omega(n^2) aka Theta(n^2)
-
-Bogosort - Shuffles, checks if sorted, if not repeat
-
-merge sort
-psuedo code
-
-base case - when it should stop
-
-merge sort Omega(log n) O(n log n)
-goes through each dividing into two until there is one and one in which case they are compared. The two halves are then compared and merged
-
-Binary Search Trees
-Grow from top down
-connecting lines are called edges
-each element is called a node
-root is at top
-subtree is smaller section in the whole tree
-
-for binary search to work
-left subtree < root node
-right subtree > root node
-both subtrees are binary search trees
+>>
+010 >> 1 = 001

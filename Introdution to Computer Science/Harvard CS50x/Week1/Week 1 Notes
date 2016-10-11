@@ -3,7 +3,7 @@ Data Sizes in (bytes)
 -----------------
 |int - 4        |
 |float - 4      |
-|double -8      |
+|double - 8      |
 |long long - 8  |
 |char - 1       |
 |short - 2      |

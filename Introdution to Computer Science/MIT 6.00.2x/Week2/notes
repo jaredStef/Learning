@@ -1,0 +1,35 @@
+Nondeterminism
+
+-Casual
+  Not every event is caused by previous events
+-Predictive
+  Lack of knowledge about the world makes it impossible to make accurate predictions about future event states
+
+Stochastic Processes
+- An ongoing process where the next state might depend on both the previous states and some random element
+
+At beginning we learned that for a binary number there are 2^n possible outcomes where n is the number of digits
+10^n for decimal
+16^n for hex etc etc
+
+If we are to roll a die with 6 outcomes 5 times the number of possible outcomes is 6^5
+
+1 - (364/365)^100
+
+Sample space - the set of all possible outcomes
+
+event - subset of the sample space
+
+probability function - assigns an event A a probability P(A) that represents the likelihood of an event occurring
+
+Hash collisions
+Many to one
+
+Hash Buckets fix this
+
+tradeoff
+
+Large -> few collisions
+faster/uses more space
+Small -> more collisions
+slower/uses less space

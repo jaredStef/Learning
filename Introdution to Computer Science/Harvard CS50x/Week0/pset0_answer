@@ -1,0 +1,195 @@
+https://scratch.mit.edu/projects/92150042/
+
+1. Grace thought of a number, added 7, multiplied by 3, took away 5 and divided by 4 to give an answer of 7. What was the starting number?
+
+a) 2
+
+b) 3
+
+c) 4 ✔
+
+d) 5
+
+e) 6
+
+f) 7
+
+2. Alan thinks of a number. He squares it, then takes away 5, next multiplies it by 4, takes away 7, divides it by 3 and finally adds 6. His answer is 9. What number did he start with?
+
+a) 1
+
+b) 2
+
+c) 3
+
+d) 4 ✔
+
+e) 5
+
+f) 6
+
+3. If the hour hand of a clock is turned anticlockwise from 2 pm to 9 am, through how many degrees will it have turned?
+
+a) 120 degrees
+
+b) 135 degrees
+
+c) 150 degrees ✔
+
+d) 165 degrees
+
+e) 180 degrees
+
+f) 205 degrees
+4. What percentage of this shape is blue (to nearest percent)?
+
+image
+
+a) 60 percent
+
+b) 63 percent ✔
+
+c) 66 percent
+
+d) 69 percent
+
+e) 72 percent
+
+f) 75 percent
+
+5. In a counting system used by intelligent apes,
+
+A banana = 1;
+6 is represented by an orange and 2 bananas;
+An orange is worth half a mango.
+
+What is the value of two mangos, an orange and a banana?
+
+
+a) 21 ✔
+
+b) 24
+
+c) 27
+
+d) 30
+
+e) 33
+
+f) 36
+6. You start in square E6 facing East. Move 3 squares forward. Turn 90 degrees clockwise, move two squares forward. Turn 180 degrees anticlockwise. Move 5 squares forward. Turn 90 degrees anticlockwise. Move 4 squares forward. Turn 90 degrees clockwise. Move two squares backward.
+
+image
+
+What is the Y COORDINATE of the square you are now in?
+
+
+a) 6
+
+b) 7
+
+c) 8
+
+d) 9
+
+e) 10
+
+f) 11 ✔
+7. Using the table below, what is A4 multiplied by D3 divided by C2?
+
+image
+
+a) 24
+
+b) 26 ✔
+
+c) 28
+
+d) 30
+
+e) 33
+
+f) None of these
+
+8. Let i be an integer between 1 and 9, inclusive. The expression (i>=1) and (i<=5) is true when i has values:
+
+a) 1 2 3 4 5 ✔
+
+b) 2 3 4
+
+c) 1 2 3 4 6 7 8 9
+
+d) 6 7 8 9
+
+9. Select in the missing letter sequence:
+
+acbcd , acbcbcbcd , acbcbcbcbcbcd , __________________________
+
+
+a) acbcbcbcbcbcbcbcd ✔
+
+b) acbcbcbcdacbcbcbcd
+
+c) acbcbcbcbcbcbcd
+
+d) acbcdacbcdacbcd
+
+10. Select in the missing letter sequence:
+
+__________________ , ebcccdd , ebbccccdd , ebbbcccccdd , ...
+
+
+a) eccd
+
+b) ebcd
+
+c) eccdd ✔
+
+d) ebccd
+
+11. Your job is to decide which of a set of given numbers is the smallest. How many comparisons (of 2 numbers at a time) do you have to make if you have 8 numbers?
+
+a) 5
+
+b) 6
+
+c) 7 ✔
+
+d) 8
+12. At a certain school students receive letter grades based on the following scale.
+
+image
+
+Which of the following code segments will assign the correct grade for a given integer score?
+
+Segment I.
+if (score >= 92) grade = "A";
+if (score >= 84 AND score <= 91) grade = "B";
+if (score >= 75 AND score <= 83) grade = "C";
+if (score < 75) grade = "F";
+
+Segment II.
+if (score > 92) grade = "A";
+if (score > 84 AND score 75 AND score 83) grade = "C";
+if (score = 92) grade = "A";
+else if (score >= 84) grade = "B";
+else if (score >= 75) grade = "C";
+else grade = "F";
+
+Segment III.
+
+if (score >= 92) grade = "A";
+else if (score >= 84) grade = "B";
+else if (score >= 75) grade = "C";
+else grade = "F";
+
+
+a) II only
+
+b) III only
+
+c) I and II only ✔
+
+d) I and III only
+
+e) I, II, and III

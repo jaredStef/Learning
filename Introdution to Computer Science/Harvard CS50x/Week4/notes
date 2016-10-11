@@ -1,0 +1,16 @@
+When variables are passed to functions they are swapped by value
+aka copied
+
+Use pointers to pass the actual values to edit them
+
+Like mutating functions in Swift
+
+int* p = malloc(sizeof(int));
+*p = 4;
+* pointer op
+* = follows pointer to value
+& dereference op
+& = returns address of value
+
+* = value
+& = memory address
