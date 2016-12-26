@@ -4,7 +4,8 @@
  * Computer Science 50
  * Problem Set 5
  *
- * Implements a dictionary's functionality.
+ * Implements a dictionary's functionality
+ * using a trie data type
  */
 
 #include <stdbool.h>
@@ -101,7 +102,7 @@ void printTrie(trie_node* node)
             else
             {
                 printf("[%c,%i]", current[i].c, current[i].indexIsEndOfWord);
-                // recursion is bae
+                // recursion
                 printTrie(current[i].next);
             }
         }
@@ -184,6 +185,7 @@ bool deallocTrie(trie_node* node)
     {
         if (node[i].next != NULL)
         {
+            // recursion
             deallocTrie(node[i].next);
         }
     }
