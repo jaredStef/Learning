@@ -1,0 +1,47 @@
+Eliza certa 1966
+Designed to be a Psychotherapist - everything is is a reflection of the patent in past study
+ No understanding
+"Pattern Matching"
+Take text, parse, give back to user
+
+Ex "I want to impress my boss"
+Looks for "I want" -> "Why do you want"
+append rest
+"Why do you want to impress my boss"
+one at a time
+take each token
+"Why do you want to impress your boss?"
+
+Most speech recognitions contain 3 separate statistic models
+Phonetic
+---------
+Hidden Markov Model
+3 states in graph with transitions with a probability
+intake, vibratory, exhale
+build models of every sound and determine which one is most
+likely, statistically
+
+Word pronunciation
+----------
+Hidden Markov Model
+Pieces phonetic information together into a word in stages
+
+language
+-------
+Biagram model (endgram models)
+Some words are more likely to follow another
+Captures statistically all the instances when one word follows another
+Like a bunch of books, text, etc
+Where P is probability
+Ex P(the rat ate cheese) = P(the) * P(rat) * P(ate|rat) * P(cheese|ate)
+
+Large enough sample of data it works, and works well
+
+In order to understand what is being said we rely on another model
+
+Syntactic Progressing
+Semantic Processing
+Pragmatic Processing
+
+non-verbal communication
+As we build more complex interfaces, communication will become more and more prevalent
