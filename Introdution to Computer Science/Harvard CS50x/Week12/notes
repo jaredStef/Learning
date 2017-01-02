@@ -1,0 +1,54 @@
+Seminar - Statistical Programming with R
+
+Designed for statistics and data analysis
+Imperative, Weakly Typed, Interpreted
+
+Recommended Books: (both free)
+"An Introduction to R" by the devs who make R
+"Advanced Data Analysis from an Elementary Point of View" by C. R. Shalizi
+
+Use for:
+- Mining large data sets,
+- Automated statistical analysis
+- Data visualization or graphing
+
+3 basic types: numeric type, character (string) type, and boolean type
+- Vectors, matrices, and higher dimension arrays
+Lists
+Numeric values are vectors of size 1
+No mix type arrays
+
+assignment <-
+comments #
+modular %%
+division %/%
+ranges num:num ex 2:5 = [2,3,4,5]
+ranges are 1 indexed (its not made for programmers)
+for loop - for (value in vector) {}
+function - foo <- function(args) {}
+
+make an array c(data1, data2)
+functions applied to each item in the array individually (like map)
+
+matrix(data, rows, columns)
+access rows foo[row,] and columns foo[,col]
+
+list(key=val)
+access and set with foo$key
+
+dataframes used for representing tables
+give columns and rows names
+
+can assign default args to functions
+no return, last statement is returned
+
+can import and export data
+
+multilinear regression
+lm(dependentVar ~ independentVars)
+
+simple correlation use cor function
+
+plot using plot function
+
+plot(x, y, ...optional args)

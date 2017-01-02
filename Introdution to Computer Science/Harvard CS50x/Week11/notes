@@ -1,0 +1,63 @@
+Search Problems using trees
+Depth First - all the way to bottom and then back up
+breath first - each layer on each node and then deeper
+
+Search Trees Fundamental to AI
+Adversarial Search
+Minimax Strategy
+Choose move that gives opponent worst set of possibilities
+
+Generate the game tree in its entirety
+Evaluate each terminal node (high values good for you)
+Filter values from terminal nodes through the tree
+
+  At nodes controlled by opponent, choose min value of children
+  At nodes controlled by you, choose the maximum value of the children
+
+When you reach the top of the tree, you have an optimal solution
+
+What about when you can't get the full tree in memory or search in a reasonable amount of time
+ex Chess
+
+The alpha-beta principle
+If you have an idea that is bad, don't waste time seeing how truly awful it is
+
+*Note on Screenshot* in March of 2016 Google DeepMind defeated Lee Sedol in a
+ five game match 4 games to 1 at Go*
+
+Traditional Board Games
+  Perfect information
+  Static environment
+  Discrete action space
+  Deterministic actions
+
+Modern AI Opponents
+
+4X Computer Games
+  Limited information
+  Dynamic environment
+  Discrete action space
+  Deterministic actions
+
+First-Person Computer Games
+  Limited information
+  Dynamic environment
+  Continuous action Space
+  Sometimes stochastic actions
+
+Robotics
+  Limited information
+  Dynamic environment
+  Continuous action space
+  Stochastic actions
+
+-----------
+AI Series
+
+Recommender Systems
+Build a table of properties
+Increment each score for each match
+Best match score is recommended
+
+Content based filtering and collaborative based filtering (what others like)
+Real world use both (Hybrid Systems)
