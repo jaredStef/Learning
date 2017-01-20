@@ -1,0 +1,68 @@
+Get to the essence - Ignore the superfluous
+
+Meanie Genie Puzzle
+Initial Thoughts
+
+There are two standard outcomes if two single stones are weighed. Either you pick the correct stone which has a 2/9 chance or you pick two wrong stones that weigh equally. I don't think measuring two single stones will work, so perhaps the key is weighing multiple and subtracting the weight or use a math trick.
+
+Don't be afraid to make mistakes
+Every single success has been built on the ash heap of failed attempts.
+
+9 stones, identical
+Can only take one
+Jewel inside one
+8 weigh same, 1 slightly more
+2 balance scales
+Only used once each
+
+Balance scales have two sides. She can put 4 and 4 on each side for her first weighing. If they are the same than it is the one left. If one is heavier it is within those four. Weight 2 and 2 and then she will have a 50% chance, but not definite.
+
+- Silly answer, break the stones to see
+
+-- watched first work through. Tried my first attempt. Next thoughts --
+
+Change to three groups of three.
+
+Balance scales have two sides. She can put 3 and 3 on each side for her first weighing with 3 left out. If they are the same than it is within the 3 left. If one is heavier it is within those three. Weight 1 and 1. If equal it is the stone left, if one is heavier it is that stone.
+I believe I have solved the problem!
+
+-- next work through --
+I have in fact solved the problem.
+
+-- Next Problem --
+Couple throws a party. Named Stacy and Sam.
+
+- 5 couples present including self
+- no shaking between spouses
+- no shaking own hand
+- max of 8 shakes
+1->0
+2->1
+3->2
+4->3
+5->4
+6->5
+7->6
+8->7
+9->8
+
+How many did Stacy shake?
+8?
+Initial work out on paper.
+Drew 10 people with number of shakes over head.
+Labeled every 2 the same letter. A, A, B, B, etc to denote spouse
+Shook next if not spouse until at 0. If not at 0 add left over shakes onto Stacy.
+Got 8.
+
+This technique was very poor as it made multiple assumptions which ended up being false.
+
+My new answer for the simplified problem (2 couples) was 1. - this is correct
+
+Tried to work original backwards and with new strategy.
+Got 4.
+
+4 is indeed correct.
+
+The problem solving strategy "breaking the problem into simpler forms" was demonstrated.
+
+I have a high amount of respect for this professor.
