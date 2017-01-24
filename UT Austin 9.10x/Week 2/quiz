@@ -1,0 +1,13 @@
+100 prisoners, who were not really guilty, have gained the sympathy of the warden. The warden makes them the following deal. The prisoners can talk among themselves and decide on a strategy in advance. Then all 100 prisoners will be arranged in a round circle so that each can see the color of the hats of each of the other prisoners but cannot see the color of his or her own hat. Each hat is one of a specified 100 colors, where the same color can be used any number of times or not at all. All the hats could be the same color, for example. After the prisoners have silently and without any communication, examined all of the hats, each prisoner writes a guess for what color his or her hat is. If at least one prisoner correctly guesses the color of his or her hat, then all the prisoners are set free. Your goal is to devise a strategy by which all the prisoners will go free.
+
+What would be a useful, simpler, problem to solve first?
+Change the number of prisoners to 2 and the number of hat colors to 2, leave the rest the same
+CORRECT
+
+In the pirates and admirals puzzle, what did you view as the unexpected step?
+moving 2 people back to the side they started on
+CORRECT
+
+In the Towers of Hanoi videos,
+moving a stack of size 8 requires about twice as many steps as moving a stack of size 7.
+CORRECT

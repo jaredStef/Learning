@@ -1,0 +1,106 @@
+Pirates and Admirals
+----------------------
+
+3 Admirals
+3 Pirates
+
+2 ppl per boat going across river
+
+Pirates should never outnumber Admiral
+1 person has to row boat
+
+I worked the problem out in a series of steps and then if I lead to a dead-end, stopped and started with another solution from the last known correct one
+The correct answer is worked out below
+X denotes what side of the river the boat is on, the rest is self explanatory.
+
+     X
+0P | 3P
+0A | 3A
+
+<- 1A, 1P
+
+ X
+1P | 2P
+1A | 2A
+
+-> 1A
+
+     X
+1P | 2P
+0A | 3A
+
+<- 2P
+
+X
+3P | 0P
+0A | 3A
+
+-> 1P
+
+     X
+2P | 1P
+0A | 3A
+
+<- 2A
+
+ X
+2P | 1P
+2A | 1A
+
+-> 1P, 1A
+
+     X
+1P | 2P
+1A | 2A
+
+<- 2A
+
+X
+2P | 2P
+3A | 0A
+
+-> 1P
+
+     X
+0P | 3P
+3A | 0A
+
+<- 2P
+
+X
+2P | 1P
+3A | 0A
+
+-> 1P
+
+     X
+1P | 2P
+3A | 0A
+
+<- 2P
+
+X
+3P | 0P
+3A | 0A
+
+Towers of Hanoi
+----------------------
+I recall solving this problem programmatically when learning about recursion.
+
+I started solving with only 3 disks, and later 4 to simplify.
+
+6oz
+10oz
+Want 8oz
+
+Fountain of Knowledge - Extra Problem
+------------------------
+How to get 8oz of liquid with only a 10oz and 6 oz cup with no measurements.
+
+
+Fill the 10 oz cup. Pour into the 6 oz cup.
+There is now 4 in the 10oz cup.
+Empty the 6oz cup.
+Pour the 4oz into the 6 oz cup.
+Fill the 10oz cup into the 6oz cup.
+This will remove 2 and you will be left with 8oz.
