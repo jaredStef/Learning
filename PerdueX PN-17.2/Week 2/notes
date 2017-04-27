@@ -1,0 +1,112 @@
+Financial Ratios
+------------------
+Price earnings ratio - high can mean optimism - if lagging behind other similar companies can mean under valued
+current price / earnings per share (can be 52wk actual, or expected earnings)
+
+current price / earnings per share
+
+dividend yield
+dollar dividend / share price
+
+price/book
+stock price / (assets - liabilities)
+
+PEG ratio - if more than 1 then over valued, less could be under valued
+Price earnings ratio / earnings per share growth
+
+*Just a piece of the puzzle*
+
+ETFs
+-----
+- Mutual fund orders only executed at end of day
+- ETFs execute like stock
+- ~20 years old
+- focused on segments of the industry
+- more granularity compared to MF
+- can short and buy on margin
+- tax advantages
+
+Market Indices
+----------------
+Measures market overall
+1896 Charles Dow started
+Based on 30 representative companies
+
+S&P 500 - 500 stocks
+remains main academically
+price weighted
+Dow doesn't factor relative size of company
+S&P 500 does
+
+More Russell 3000 etc
+
+Stock Analysts
+------------------
+Employed by research departments
+Pronounce BUY/SELL/HOLD judgments
+In 2001, less than 2% of stocks were sell or strong sell
+May have conflict of interest
+Firms provide services
+If firms give poor ratings might hire someone else
+Look at recommendations as a single tool to decide on an investment
+
+Bonds
+------
+Loan transactions
+Companies and governments do as well
+No voting rights, simply lenders
+Bonds have a finite maturity
+As long as aren't going bankrupt - safe
+Pay periodic coupon interest and pay face val upon maturity
+Rated - AAA is best
+Junk Bonds BB+ or lower
+US gov't has 3 bond raters, S&P, Moody's, and Fitch
+In 2011 S&P dropped US gov't rating from AAA to AA+
+
+Bond prices are inversely related to the borrowing rates in the economy
+
+Inversely related to borrowing rates
+Short vs long term
+laddering (buying short term at increments) 1 yr, 2, 3 etc to average out over time
+
+Stock Trades
+------------------
+Market Order - # of shares of what ticker, executed at that time at whatever price
+order execution guaranteed, price uncertain
+
+Limit Order - # of shares and price, willing to accept that price or lower
+Ceiling of max price willing to buy
+Or lowest willing to sell at
+price certain, execution time uncertain
+GTC (good 'til cancelled) or good for day
+wether it stops when you formally cancel or at end of day
+
+Stop loss order - if price drops to a certain price, sell out to ensure gains
+
+Limit sell order, sell out as moves upward
+Could sell too soon
+Stop loss order, sell when market moves down
+
+Margin Buying - Can buy 50% minimum of stock and rest broker pays
+When selling first you pay broker and then get gains
+leverage risk
+Used to be able to do 80%
+In 1929 one of reasons for crash were buying on margin so much
+
+Short selling - Borrow a share from a broker
+That amount goes into your account ex 1 x $100
+Then "cover position" and broker takes your money to buy the share back at market price Ex 1 x $70
+You get money left in brokerage account $30
+referred to as "going long"
+risky, losses unlimited bc stock can go up an unlimited amount
+
+Options
+-------------
+Sometimes called derivative securities
+Right to buy a stock at a price
+Go up or down based on underlying stock price
+Larger than stock market in volume
+
+Call or Put
+Can buy or sell options
+Buying calls and puts is safer than selling them
