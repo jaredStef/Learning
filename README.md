@@ -7,12 +7,9 @@ Name | Week Number | Progress | Subject
 :-- | :--: | :--: | :-- |
 [Harvard CS50x](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!)| 12/12 | 100% | CS
 [MIT 6.0.0.1x](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-5#!)| 8/8 | 100% | CS
-[MIT 6.0.0.2x](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-3#!)|1/8|12.5% | CS
+[MIT 6.0.0.2x](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-3#!)|0/8| 0% | CS
 [UT Austin 9.10x](https://www.edx.org/course/effective-thinking-through-mathematics-utaustinx-ut-9-01x)|2/5| 40% | Math/Problem Solving
-[PurdueX: PN-17.2](https://courses.edx.org/courses/course-v1:PurdueX+PN-17.2+1T2017)|2/5| 40% | Economics
-
-**NOTE: MIT 6.0.0.2x has been taken down from EdX. It starts again on March 7th,
-2017**
+[PurdueX: PN-17.2](https://courses.edx.org/courses/course-v1:PurdueX+PN-17.2+1T2017)|3/5| 60% | Finance
 
 ##Resources
 The internet is the most liberating tool ever created from an educational perspective. These links will help you get started.
