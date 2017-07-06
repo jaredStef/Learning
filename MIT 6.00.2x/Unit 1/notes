@@ -1,0 +1,126 @@
+3 model types
+
+Optimization Models
+Statistical Models
+Simulation Models
+
+Optimization Model
+-------------------
+- An objective function to be maximized or minimized
+  Ex min time spent traveling between NY and Boston
+- Set of constraints
+  Ex cost etc
+
+  - Many important problems can be reduced to an optimization problem
+  - Easy to reduce a problem to one already solved than inventing a solution
+  - Computationally challenging (Long running time)
+
+  Greedy algorithm approximates a solution
+
+  Knapsack problem
+  -----------------
+  More items than will fit in bag
+  Limited weight and number of items
+
+Two variants
+- 0/1 whole or none - a lot harder!
+- Continuous or fractional problem
+
+--- 0/1 problem formalized ---
+Each item represented by <value, weight>
+Sack can only have a weight of w
+A vector L, of length n, set of items
+A vector V, indicating if an item is taken
+
+Maximize value such that weight <= w
+
+note: V[i] is 1 or 0 based on if the item is in new vector
+maximize n-1∑i=0 V[i] * I[i].value
+Start with i = 0, incrementing up to n-1 which is length of vector
+
+constraint
+n-1∑i=0 V[i] * I[i].weight <= w
+
+- Can brute force, called power set
+- Remove all combos who's units exceed weight
+- then choose most valuable
+
+Not practical - how big is power set?
+Exponential algorithm
+
+inherently exponential - Can't be solved in less than exponential time :(
+
+-----------------------------------------------------------------
+
+lambda creates anonymous functions
+use def if more than 1 simple line for readability
+finds local optimum
+
+greedy functions are
+
+- easy to implement
+- efficient
+
+- not always best answer, not known how good an approximation it is
+
+Note: number of subsets is 2^n for any given set
+
+-------------------------------------------------------------------
+
+Search Tree Implementation
+
+- built top down starting with root
+- first item is selected from still to be considered items
+if there is room, a node is constructed that reflects the consequence of choosing that item
+- by convention we draw left item
+- We explore the consequences of not taking, right node
+- apply recursively to non-leaf item
+- left first, depth-first enumeration
+- time based on # of nodes generated
+- number of levels = number of items
+- number of nodes at level i is 2^i
+
+n items, number of nodes is
+∑i=n, i=0, 2^i ie O(2^i + 1)
+exponential
+
+- don't have to explore parts that violate constraint, but doesn't change complexity
+
+-------------------------------------------------------------------
+Dynamic Programming
+
+Storing solved problems so they aren't repeated
+
+Works well when both the following are present
+Optimal substructure: can break down into smaller problems and combine to solve a larger one
+
+Overlapping subproblems: solving same subproblem multiple times
+-------------------------------------------------------------------
+Graph Theory
+
+A graph is a set of nodes (vertices)
+  - might have properties associated with them
+   - undirected (2 way)
+- directed (1 way)
+- can be unweighted or weighted
+can represent distance or capacity
+
+Used to capture relationships among entities
+
+A tree is a
+- directed graph in which each pair of nodes is connected by a single path
+recall the search trees to solve the knapsack problem
+
+Leonhard Euler's Model
+- Each island is node
+- Each bridge is undirected edge
+
+Model abstracts away irrelevant details
+
+-------------------------------------------------------------------
+DFS - (Depth First Search)
+BFS - (Breath First Search)
+
+- Graphs are the best way to model may things
+- Many important problems solved using them
+- Can't imagine modern computer-science without them

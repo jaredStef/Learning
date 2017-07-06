@@ -1,0 +1,20 @@
+POLL: ALGORITHM INTUITION
+(ungraded) Before doing the task in this part, answer the following question to see your intuition for how the greedy and brute force algorithm run. In terms of time, which algorithm do you expect will run faster?
+
+(X) Greedy Algorithm 
+()  Brute Force Algoritm 
+
+Now that you have run your benchmarks, which algorithm runs faster?
+(X) The Greedy Transport Algorithm
+()  The Brute Force Transport Algorithm
+()  They take the same amount of time
+
+Consider the properties of the GREEDY algorithm. Will it return the optimal solution?
+()  Yes, all the time
+()  No, never
+(X) It could, but it depends on the data, not always.
+
+Consider the properties of the BRUTE FORCE algorithm. Will it return the optimal solution?
+(X) Yes, all the time
+()  No, never
+()  It could, but it depends on the data, not always.
