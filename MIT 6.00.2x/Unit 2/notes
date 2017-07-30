@@ -1,0 +1,92 @@
+Using Pylab
+---------------------
+import pylab as plt
+
+plt.plot(list of X vals, list of Y vals)
+
+plt.figure(<arg>)
+- creates new display with that name if it doesn't exist
+- if exists does additional processing and reopens it
+
+plt.xlabel(string)
+plt.ylabel(string)
+- label axis
+
+plt.title(string)
+- title graph
+
+We are reusing a previously created display window
+plt.clf()
+- clear window
+
+ply.ylim(0, 1000)
+- set range of y axis
+
+plt.legend()
+plt.legend(loc='upper left')
+- display a legend
+
+plt.plot(sampleX, sampleY, 'b-', label='linear', linewidth=2.0)
+				- color line and style in documentation
+				- change width of line
+
+plt.subplot(122)
+# of rows, # of columns, location to use
+display in figure
+
+plt.yscale('log')
+use log scale instead of linear
+
+---------------------
+Stochastic Thinking and Random Walks
+---------------------
+
+Copenhagen Doctrine - casual nondeterminism
+
+- at it's most fundamental level, the behavior of the physical world cannot be predicted
+- fine to make statements of the form "x is highly likely to occur", but not the form of "x is certain to occur"
+
+- Einstein and Schrodinger objected
+	- "God does not play dice" - Albert Einstein
+
+- The world may or may not be inherently unpredictable
+- But our lack of knowledge doesn't allow us to make accurate predictions
+- Therefore we might as well treat the world as unpredictable
+- Predictive nondeterminism
+
+Stochastic Process
+- Ongoing process where the next state might depend on both the previous states and some random element
+
+Model Types
+
+deterministic - behavior is entirely predictable. Every set of variable states is uniquely determined by parameters in the model and by sets of previous states of these variables. Therefore, these models perform the same way for a given set of initial conditions, and it is possible to predict precisely what will happen
+
+stochastic - one in which randomness is present, and variable states are not described by unique values, but rather by probability distributions. The behavior of this model cannot be entirely predicted.
+
+static - model does not account for the element of time. In this type of model, a simulation will give us a snapshot at a single point in time.
+
+dynamic - model does account for the element of time. This type of model often contains state variables that change over time.
+
+discrete - model does not take into account the function of time. The state variables change only at a countable number of points in time, abruptly from one state to another.
+
+continuous - model does take into account the function of time, typically by modeling a function f(t) and the changes reflected over time intervals. The state variables change in an unbroken way through an infinite number of states
+
+3 Basic Probability Facts
+
+- Probabilities are always in the rand 0 to 1, impossible to guaranteed
+- if the probability is p, probability of it not occurring is 1-p
+- When events are independent of each other, the probability of all events occurring is equal to a product of the probabilities of each of the events occurring
+
+- Events are independent if the outcome of one has no influence on the other
+
+- it takes many trials to get a good estimate of probability
+- don't confuse the sample probability with the actual
+- there was no need the the lecture since a perfectly good closed form answer existed and was easily gotten
+- but simulations are useful
+---------------------
+Simulation Models
+
+- a description of computations that provide useful information about the possible behaviors of the system being modeled
+- Descriptive, not prescriptive
+- Only an approximation to reality
+- "All models are wrong, but some are useful" - George Box
