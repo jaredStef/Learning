@@ -1,0 +1,147 @@
+Inferential Statistics
+
+Confidence Intervals
+-----------------------
+Population - set of examples 
+Sample - a proper subset of population
+Goal - Estimate some statistic about the population based on statistics about people
+Key fact - If the sample is random, it tends to exhibit the same properties as the population from which it was drawn 
+
+Confidence in our estimated depends upon two things 
+- Size of sample (100 vs 2) 
+- Variance of sample (all heads vs 52 heads) 
+- As variance grows we need larger samples to have same degree of confidence 
+
+ Law of Large Numbers - in repeated independent tests with the same actual probability p 
+ of a particular outcome in each test, the chance that the fraction of times that the outcome 
+ occurs differs from p converges to zero as the number of trials approaches infinity
+ 
+ Gamblers Fallacy - If deviations from expected behavior occur, these are likely to be 
+ evened out by opposite deviations in the future
+ Ex baseball hitter hasn't gotten one in a while and is "due" 
+
+People often confuse the gamblers fallacy (illogical) with regression to the mean (logical) 
+
+Regression to Mean - following an extreme random event, the next random event is likely to be less extreme
+First used by Francis Galton in 1885
+
+Variation in Data 
+-----------------------
+- Never possible to guarantee perfect accuracy through sampling 
+- Not to say that an estimate is not precisely correct
+- How many samples do we need to look at before we can have justified confidence in our answer?
+	- Depends on variability of the underlying distribution 
+	
+- Standard deviation is simply the sqrt of the variance 
+- Outliers can have a big effect 
+- Standard deviation should always be considered relative to mean 
+
+Instead of estimating an unknown parameter by a single value (eg, the mean of a set of trials),
+a confidence interval provides a range that is likely to contain the unknown value and a confidence
+that the unknown value lies within that range 
+
+ex "The return of betting on 2 twenty times in European roulette is -3.3%. The margin of error
+is +/- 1 percentage point with a 95% level of confidence 
+
+Means 95% of the time the result will be between -2.3% and -4.3% 
+
+The confidence interval (1) and confidence level (0.95) indicate the reliability of the estimate
+
+- Increasing confidence level, widen confidence interval 
+Ex 100% sure it is between 0 and infinity 
+Ex 0.3% sure between 83.3 and 83.5 (made these numbers up for sake of example) 
+ 
+ - Under some assumptions discussed later (Empirical Rule)
+	- ~68% of data within 1 standard deviation of mean
+	- ~95% of data within 2 standard deviation of mean
+    - ~99.7% of data within 3 standard deviation of mean
+    
+Variance - for each element in the sample, subtract the element from the mean, square that and getting the average
+Standard deviation - sqrt of variance 
+
+Distributions
+-----------------------
+Empirical Rule only holds under two assumptions 
+- the mean estimation error is zero 
+- the distribution of the errors in the estimates is normal 
+
+Defined using a probability distribution
+
+captures the notion of relative frequency with which a random variable takes on certain values
+ - discrete random variables drawn from finite set of values 
+ - Continuous random variable drawn from reals between two numbers (infinite set of numbers) 
+ 
+For discrete variable, simply list probability of each value, must add to 1
+
+Continuous case trickier, can't enumerate probability for each of an infinite set 
+
+PDFs 
+
+- Distributions defined by probability density functions 
+- Probability of a random value lying between two values 
+- defines a curve where the values on the x-axis lie between a min and max value of the variable 
+- area under curve between two points, is probability of example falling within that range 
+
+normal distributions peak at mean, fall of symmetrically 
+
+SciPy library contains many useful mathematical functions used by scientists and engineers 
+
+integration
+
+not all distribution is normal 
+
+roulette real is equally probable 
+
+Central Limit Theorem
+-----------------------
+one of the two most important in statistics 
+
+Given a sufficiently large sample: 
+	- the mean of the samples in a set of samples ( the sample means) will be normally distributed 
+	- this will have a mean close to the mean of the population and 
+	- the variance of the sample means will be close to the variance of the population divided by the sample size
+	
+The CLT allows us to use the empirical rule when computing confidence intervals  
+
+Monte Carlo Simulation
+-----------------------
+Talked about a brief history of calculating pi
+Explained Buffon-Laplace method
+Wrote simulation for it 
+
+Being Right is not good enough 
+
+We need to have a reason to believe we are close to right
+- in this case small standard deviation implies that we are close to pi
+
+small standard deviation is a condition of correctness, but statistically valid != true 
+
+should try to validate results with reality 
+
+Generally useful technique 
+
+To estimate the area of a region R 
+	- Pick an enclosing region, E, such that the area of E is easy to calculate and R lies
+	 completely within E
+	 - Pick a set of random points that lie within E 
+	 - let F be the fraction of the points that fall within R
+	 - Multiply the area of E by F 
+	
+Used for estimating integration as well 
+
+Sampling and Standard Error
+-----------------------
+
+- Simple random sampling: each member has equal chance of being chosen
+- Not always appropriate 
+
+Stratified Sampling 
+- Partition population into subgroups 
+- Take sample in proportion
+- used when there are small subgroups that should be represented 
+
+Sample Sizes 
+-----------------------
+Error Bars represent the variability of data 
+Way to graph uncertainly
+Larger sample sizes are better 
