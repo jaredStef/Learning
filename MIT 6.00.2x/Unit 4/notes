@@ -1,0 +1,44 @@
+Conduct an experiment to gather data
+Use theory to generate questions
+Design a computation to help answer questions 
+
+Linear spring: amount of force needed to compress to linear in the distance the spring is compressed 
+Each spring has a constant k - determines how much force is needed 
+
+Hooke's Law 
+F = -kd 
+Force stored in spring is linerally related to distance 
+
+Not all springs behave linearly 
+Have a limit to the law 
+
+How much to compress spring 1cm? 
+F = 0.01m * 35,000 N/m
+F = 350N 
+
+F = ma 
+Force = mass * acceleration 
+Force = mass * 9.8 m/s^2
+350N = mass * 9.8m/s^2
+mass = 350k/9.81 
+35.68kg 
+
+How to find the spring constant?
+
+When we fit a curve to data we find a fit that relates an independent variable to the estimated value of a dependent 
+
+Want to find a line that some function of the sum of differences from the line is minimized 
+
+Can measure X, Y or shortest distance (perpendicular)
+
+Use Y because we are trying to understand Y (dependent)
+
+Least squares objective function: 
+
+n-1 
+ Σ (observed[i] - predicted[i])^2
+i=0
+   (        Residual          )
+
+Makes optimization problem easier to solve when squared instead of using abs val for reasons that will be discussed later 
+Get rid of negative because we want to know how much it differs, not in what direction 
